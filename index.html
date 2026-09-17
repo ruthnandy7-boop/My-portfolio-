@@ -1,1 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ── SEO ──────────────────────────────────────────────────────── -->
+  <title>Nandera Ruth · DIT Student & Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Nandera Ruth — DIT student and AI enthusiast exploring cybersecurity, networking and database management. View projects, skills and services.">
+  <meta name="author" content="Nandera Ruth">
+  <meta name="theme-color" content="#fdf8f5">
+
+  <!-- Open Graph placeholders (✏️ replace og:image with your own) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nandera Ruth · DIT Student & Developer Portfolio">
+  <meta property="og:description" content="Clean, hand-coded portfolio — projects, skills and services in AI, cybersecurity, networking and databases.">
+  <meta property="og:image" content="images/og-image.jpg">
+
+  <!-- Fonts: Fraunces (display) + Manrope (body) + JetBrains Mono (labels).
+       System fallbacks are declared in css/style.css :root -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured data placeholder (✏️ update profile URLs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nandera Ruth",
+    "jobTitle": "DIT Student",
+    "email": "mailto:ruthnandy7@gmail.com",
+    "telephone": "0764297051",
+    "url": "https://example.com",
+    "sameAs": ["https://github.com/yourusername", "https://www.linkedin.com/in/yourusername"]
+  }
+  </script>
+
+  <!-- marks that JS is available (keeps the page readable without JS) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ═════════════════ PRELOADER (subtle load-in) ═════════════════ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="pre-mark">
+      NR
+      <span class="pre-bar"></span>
+      <small>loading portfolio</small>
+    </div>
+  </div>
+
+  <!-- ═════════════════ AMBIENT BACKGROUND LAYERS ═════════════════ -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="bg-noise"></div>
+  </div>
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ═════════════════════════ NAVIGATION ═════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Primary">
+      <!-- ✏️ LOGO / MONOGRAM — change "NR" to your initials -->
+      <a class="logo" href="#home">
+        <span class="logo-mark" aria-hidden="true">NR</span>
+        <span class="logo-text">
+          <span class="logo-name">Nandera Ruth</span>
+          <span class="logo-sub">DIT · Developer</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" href="#home"><span class="nav-num">01.</span>Home</a></li>
+        <li><a class="nav-link" href="#about"><span class="nav-num">02.</span>About</a></li>
+        <li><a class="nav-link" href="#skills"><span class="nav-num">03.</span>Skills</a></li>
+        <li><a class="nav-link" href="#projects"><span class="nav-num">04.</span>Projects</a></li>
+        <li><a class="nav-link" href="#services"><span class="nav-num">05.</span>Services</a></li>
+        <li><a class="nav-link" href="#contact"><span class="nav-num">06.</span>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-hire" href="#contact">Hire Me</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ══════════════════════════ HERO ══════════════════════════ -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <span class="hero-plus hp-1" aria-hidden="true">✦</span>
+      <span class="hero-plus hp-2" aria-hidden="true">✦</span>
+      <span class="hero-plus hp-3" aria-hidden="true">✦</span>
+      <span class="hero-side" aria-hidden="true">PORTFOLIO — 2026</span>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <!-- availability indicator -->
+          <div class="status-pill" data-anim style="--d:.15s">
+            <span class="status-dot" aria-hidden="true"></span>
+            Available for opportunities
+          </div>
+
+          <p class="hero-eyebrow" data-anim style="--d:.25s">Hello, I’m</p>
+
+          <!-- ✏️ YOUR NAME — edit the two masked lines below -->
+          <h1 class="hero-name">
+            <span class="mask-line"><span style="--d:.35s">Nandera</span></span>
+            <span class="mask-line"><span style="--d:.47s"><span class="outline">Ruth</span><span class="dot">.</span></span></span>
+          </h1>
+
+          <!-- rotating role (titles are edited in js/script.js → roles[]) -->
+          <p class="hero-role" data-anim style="--d:.6s">
+            <span class="role-prefix" aria-hidden="true">~/&gt;</span>
+            <span id="role-scramble">DIT Student</span>
+            <span class="role-caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-bio" data-anim style="--d:.72s">
+            I’m a <strong>Diploma in Information Technology</strong> student who loves
+            understanding how things actually work — from C programs compiling on my
+            laptop to packets crossing a network. Right now I’m exploring
+            <strong>artificial intelligence</strong>, <strong>cybersecurity</strong> and
+            <strong>databases</strong>, turning classroom theory into small, real, working projects.
+          </p>
+
+          <div class="hero-ctas" data-anim style="--d:.84s">
+            <a class="btn btn-primary" href="#projects">
+              View My Work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              Contact Me
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+
+          <!-- ✏️ Your focus areas, shown as chips -->
+          <div class="hero-chips" data-anim style="--d:.96s">
+            <span class="chip">DIT Student</span>
+            <span class="chip">AI Enthusiast</span>
+            <span class="chip">Cybersecurity</span>
+            <span class="chip">Networking</span>
+            <span class="chip">Database Management</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-anim style="--d:.5s">
+          <div class="portrait-stage">
+            <div class="portrait">
+              <div class="portrait-glow" aria-hidden="true"></div>
+              <div class="orbit" aria-hidden="true">
+                <span class="orbit-dot"></span>
+                <span class="orbit-dot small"></span>
+              </div>
+              <div class="portrait-ring" aria-hidden="true"></div>
+              <div class="portrait-img-wrap">
+                <!-- initials shown automatically if the image is missing -->
+                <span class="portrait-fallback" aria-hidden="true">NR</span>
+                <!-- ✏️ PROFILE IMAGE — save your photo to images/profile.jpg
+                     and change the src below (keep the alt text accurate) -->
+                <img class="portrait-img"
+                     src="images/trouble.jpeg"
+                     alt="Portrait of Nandera Ruth — DIT student and developer"
+                     width="640" height="640" decoding="async" fetchpriority="high"
+                     data-fallback>
+              </div>
+            </div>
+
+            <!-- floating glass chips -->
+            <div class="float-chip fc-1" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><rect x="8" y="8" width="8" height="8" rx="2"/></svg>
+              AI / ML
+            </div>
+            <div class="float-chip fc-2" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.3 3.8 5.2 3.8 8.5s-1.3 6.2-3.8 8.5c-2.5-2.3-3.8-5.2-3.8-8.5s1.3-6.2 3.8-8.5z"/></svg>
+              NETWORKING
+            </div>
+            <div class="float-chip fc-3" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="3"/><path d="M4.5 5.5v13c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-13"/><path d="M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3"/></svg>
+              DATABASES
+            </div>
+
+            <!-- "now learning" mini card -->
+            <div class="now-card glass">
+              <span class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+              <div>
+                <small>Currently learning</small>
+                <strong>Python &amp; AI fundamentals</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        scroll
+        <span class="cue-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════ SKILL TICKER DIVIDER ═══════════════ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-set">
+          <span class="ticker-item">C Programming</span>
+          <span class="ticker-item">C++</span>
+          <span class="ticker-item">HTML5</span>
+          <span class="ticker-item">CSS3</span>
+          <span class="ticker-item">Artificial Intelligence</span>
+          <span class="ticker-item">Cybersecurity</span>
+          <span class="ticker-item">Networking</span>
+          <span class="ticker-item">Database Management</span>
+          <span class="ticker-item">Git · GitHub</span>
+          <span class="ticker-item">Problem Solving</span>
+        </div>
+        <div class="ticker-set">
+          <span class="ticker-item">C Programming</span>
+          <span class="ticker-item">C++</span>
+          <span class="ticker-item">HTML5</span>
+          <span class="ticker-item">CSS3</span>
+          <span class="ticker-item">Artificial Intelligence</span>
+          <span class="ticker-item">Cybersecurity</span>
+          <span class="ticker-item">Networking</span>
+          <span class="ticker-item">Database Management</span>
+          <span class="ticker-item">Git · GitHub</span>
+          <span class="ticker-item">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ ABOUT ══════════════════════════ -->
+    <section class="section" id="about">
+      <span class="section-ghost" aria-hidden="true">About</span>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">01 — About Me</span>
+          <h2 class="section-title">Curious by default,<br><em>disciplined</em> by practice.</h2>
+          <p class="section-lead">A quick look at who I am, what I’m learning, and where I’m headed.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal" style="--d:.1s">
+            <!-- ✏️ BIOGRAPHY — rewrite these paragraphs in your own voice -->
+            <p>
+              Hello! I’m <strong>Nandera Ruth</strong> — a DIT student with a habit of taking
+              things apart to see how they work. What started as curiosity about how computers
+              think has grown into a focused journey through
+              <strong>programming, networks and data</strong>.
+            </p>
+            <p>
+              My goal is simple: build a strong engineering foundation during my diploma,
+              then go deeper into <strong>AI and security</strong> — work that matters, on
+              systems people rely on. Until then, I’m shipping small projects, running
+              networking labs and learning in public.
+            </p>
+
+            <!-- current learning focus -->
+            <div class="learn-card glass">
+              <h3 class="learn-head"><span class="pulse-mini" aria-hidden="true"></span>Currently Learning</h3>
+              <ul>
+                <li>Python for AI &amp; scripting</li>
+                <li>Advanced SQL &amp; database design</li>
+                <li>Network security fundamentals</li>
+                <li>Git workflows &amp; open source</li>
+              </ul>
+            </div>
+
+            <!-- ✏️ CAREER INTERESTS — edit chips freely -->
+            <div class="interest-chips">
+              <span class="chip">AI &amp; Machine Learning</span>
+              <span class="chip">Cybersecurity</span>
+              <span class="chip">Web Development</span>
+              <span class="chip">Network Engineering</span>
+              <span class="chip">Database Administration</span>
+              <span class="chip">Cloud Fundamentals</span>
+            </div>
+          </div>
+
+          <!-- ✏️ STATISTICS — change data-count values + labels.
+               Keep numbers honest; these are editable placeholders. -->
+          <div class="about-stats">
+            <div class="stat-card glass reveal" style="--d:.15s">
+              <div class="stat-number"><span data-count="6">06</span><span class="stat-suffix">+</span></div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card glass reveal" style="--d:.25s">
+              <div class="stat-number"><span data-count="12">12</span><span class="stat-suffix">+</span></div>
+              <div class="stat-label">Technologies Explored</div>
+            </div>
+            <div class="stat-card glass reveal" style="--d:.35s">
+              <div class="stat-number"><span data-count="4">04</span></div>
+              <div class="stat-label">Areas of Study</div>
+            </div>
+            <div class="stat-card glass reveal" style="--d:.45s">
+              <div class="stat-number"><span data-count="2">02</span><span class="stat-suffix">+</span></div>
+              <div class="stat-label">Years of Learning</div>
+            </div>
+            <div class="about-quote glass reveal" style="--d:.55s">
+              <p>“Every line of code, every packet, every query — I’m here to understand the whole stack, one layer at a time.”</p>
+              <!-- ✏️ Update to your current year / institute -->
+              <cite>— Currently · DIT, 2nd Year</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ SKILLS ══════════════════════════ -->
+    <section class="section" id="skills">
+      <span class="section-ghost" aria-hidden="true">Skills</span>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2 class="section-title">Tools of the trade,<br><em>honestly</em> rated.</h2>
+          <p class="section-lead">No inflated percentages — just where I genuinely stand today, in the open.</p>
+        </div>
+
+        <!-- ✏️ SKILLS — edit names, descriptions and data-level (1–5) below -->
+        <div class="skills-grid">
+          <!-- PROGRAMMING -->
+          <div class="skill-group glass reveal">
+            <div class="skill-group-head">
+              <span class="skill-group-icon icon-peach" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+              </span>
+              <div>
+                <h3 class="sg-title">Programming</h3>
+                <p class="sg-sub">Languages I write</p>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-row" data-level="4">
+                <div class="skill-top"><span class="skill-name">C</span><span class="skill-level">Confident</span></div>
+                <p class="skill-desc">My first language — logic, pointers and memory, done by hand.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="3">
+                <div class="skill-top"><span class="skill-name">C++</span><span class="skill-level">Building up</span></div>
+                <p class="skill-desc">Object-oriented projects and console applications.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="4">
+                <div class="skill-top"><span class="skill-name">HTML</span><span class="skill-level">Confident</span></div>
+                <p class="skill-desc">Semantic, accessible markup — the bones of every page I ship.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="3">
+                <div class="skill-top"><span class="skill-name">CSS</span><span class="skill-level">Building up</span></div>
+                <p class="skill-desc">Responsive layouts, soft glass surfaces and tasteful animation.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- TECHNOLOGY -->
+          <div class="skill-group glass reveal" style="--d:.12s">
+            <div class="skill-group-head">
+              <span class="skill-group-icon icon-pink" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.5 5.5l1.8 1.8M16.7 16.7l1.8 1.8M18.5 5.5l-1.8 1.8M7.3 16.7l-1.8 1.8"/><rect x="7" y="7" width="10" height="10" rx="2"/></svg>
+              </span>
+              <div>
+                <h3 class="sg-title">Technology</h3>
+                <p class="sg-sub">Fields I’m exploring</p>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-row" data-level="2">
+                <div class="skill-top"><span class="skill-name">Artificial Intelligence</span><span class="skill-level">Exploring</span></div>
+                <p class="skill-desc">Fundamentals, simple chatbots and a lot of reading.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="3">
+                <div class="skill-top"><span class="skill-name">Cybersecurity</span><span class="skill-level">Learning core</span></div>
+                <p class="skill-desc">Security concepts, hardening habits and CTF-style labs.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="3">
+                <div class="skill-top"><span class="skill-name">Networking</span><span class="skill-level">Hands-on</span></div>
+                <p class="skill-desc">Subnetting, routing and switching in Packet Tracer labs.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="3">
+                <div class="skill-top"><span class="skill-name">Database Management</span><span class="skill-level">Practicing</span></div>
+                <p class="skill-desc">ER modeling, normalization and everyday SQL.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- TOOLS -->
+          <div class="skill-group glass reveal" style="--d:.24s">
+            <div class="skill-group-head">
+              <span class="skill-group-icon icon-lilac" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.7 6.3a5.2 5.2 0 0 1-7 6.4L7 19.4a2.3 2.3 0 0 1-3.2-3.2l6.7-6.7a5.2 5.2 0 0 1 6.4-7l-3.2 3.2.8 3 3 .8z"/></svg>
+              </span>
+              <div>
+                <h3 class="sg-title">Tools</h3>
+                <p class="sg-sub">What I build with</p>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-row" data-level="5">
+                <div class="skill-top"><span class="skill-name">Code::Blocks</span><span class="skill-level">Daily driver</span></div>
+                <p class="skill-desc">My home for C/C++ — debugging, builds and late-night labs.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="4">
+                <div class="skill-top"><span class="skill-name">Cisco Packet Tracer</span><span class="skill-level">Lab work</span></div>
+                <p class="skill-desc">Designing and testing networks before touching hardware.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="2">
+                <div class="skill-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-level">Learning flow</span></div>
+                <p class="skill-desc">Commits, branches and pushing projects to the open.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+              <li class="skill-row" data-level="3">
+                <div class="skill-top"><span class="skill-name">VS Code</span><span class="skill-level">For the web</span></div>
+                <p class="skill-desc">HTML/CSS editing with live preview while building pages.</p>
+                <div class="skill-bar" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ PROJECTS ══════════════════════════
+         ✏️ ADD A PROJECT: copy any <article class="project-card">…</article>
+         block, change the index number, title, description, tags and links.
+         Replace a visual by swapping its <svg> for an <img> if you prefer. -->
+    <section class="section" id="projects">
+      <span class="section-ghost" aria-hidden="true">Work</span>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">03 — Projects</span>
+          <h2 class="section-title">Small builds,<br><em>real</em> lessons.</h2>
+          <p class="section-lead">Coursework and self-driven experiments — each one taught me something I couldn’t learn from a slide deck.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 01 · FEATURED — Personal Portfolio Website -->
+          <article class="project-card glass featured reveal">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-index">01</span>
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="40" y="28" width="240" height="144" rx="10"/>
+                <path d="M40 56h240"/>
+                <circle cx="58" cy="42" r="4"/><circle cx="74" cy="42" r="4"/><circle cx="90" cy="42" r="4"/>
+                <rect x="58" y="74" width="96" height="12" rx="6"/>
+                <rect x="58" y="98" width="140" height="6" rx="3" opacity=".55"/>
+                <rect x="58" y="112" width="118" height="6" rx="3" opacity=".55"/>
+                <rect x="58" y="134" width="62" height="20" rx="10"/>
+                <rect x="196" y="74" width="66" height="80" rx="8" opacity=".7"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Personal Portfolio Website</h3><span class="project-year">2026</span></div>
+              <p>The site you’re on right now — designed and built from scratch with semantic HTML5, modern CSS3 and a sprinkle of vanilla JavaScript. No frameworks, no page builders.</p>
+              <p class="project-extra">▸ Highlight: custom pastel glassmorphism design system, fully responsive, 100% hand-coded.</p>
+              <ul class="project-tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <!-- ✏️ PROJECT LINK — replace # with the live URL -->
+                <a class="btn-sm" href="#home">View Project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+                <!-- ✏️ SOURCE LINK — replace with your repository URL -->
+                <a class="btn-sm ghost" href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer">Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 · Student Management System -->
+          <article class="project-card glass reveal" style="--d:.1s">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-index">02</span>
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="70" y="24" width="180" height="152" rx="10"/>
+                <path d="M70 60h180M70 96h180M70 132h180"/>
+                <circle cx="96" cy="42" r="8"/>
+                <rect x="116" y="36" width="70" height="10" rx="5" opacity=".7"/>
+                <path d="m88 78 5 5 9-10" opacity=".8"/>
+                <rect x="116" y="74" width="90" height="8" rx="4" opacity=".55"/>
+                <path d="m88 114 5 5 9-10" opacity=".8"/>
+                <rect x="116" y="110" width="76" height="8" rx="4" opacity=".55"/>
+                <rect x="88" y="146" width="130" height="16" rx="8" opacity=".7"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Student Management System</h3><span class="project-year">2025</span></div>
+              <p>A console-based C++ application to add, update, search and delete student records with file-based storage.</p>
+              <p class="project-extra">▸ Highlight: clean menu-driven UI with record persistence between sessions.</p>
+              <ul class="project-tags"><li>C++</li><li>OOP</li><li>File Handling</li></ul>
+              <div class="project-links">
+                <a class="btn-sm" href="#" rel="noopener">View Project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+                <a class="btn-sm ghost" href="#" rel="noopener">Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 · Network Configuration Project -->
+          <article class="project-card glass reveal" style="--d:.2s">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-index">03</span>
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="160" cy="100" r="17"/>
+                <path d="M153 100h14M160 93v14" opacity=".8"/>
+                <circle cx="66" cy="50" r="11"/><circle cx="254" cy="50" r="11"/>
+                <circle cx="66" cy="150" r="11"/><circle cx="254" cy="150" r="11"/>
+                <path d="m76 56 68 35M244 56l-68 35M76 144l68-35M244 144l-68-35"/>
+                <circle cx="160" cy="100" r="40" opacity=".35" stroke-dasharray="4 7"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Network Configuration Project</h3><span class="project-year">2025</span></div>
+              <p>A multi-site network designed and tested in Cisco Packet Tracer — subnetting, routing and VLANs, documented end to end.</p>
+              <p class="project-extra">▸ Highlight: inter-VLAN routing with a full lab documentation pack.</p>
+              <ul class="project-tags"><li>Packet Tracer</li><li>Subnetting</li><li>Routing</li></ul>
+              <div class="project-links">
+                <a class="btn-sm" href="#" rel="noopener">View Project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+                <a class="btn-sm ghost" href="#" rel="noopener">Documentation
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 · Database Management Project -->
+          <article class="project-card glass reveal" style="--d:.1s">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-index">04</span>
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="160" cy="50" rx="72" ry="20"/>
+                <path d="M88 50v100c0 11 32.2 20 72 20s72-9 72-20V50"/>
+                <path d="M88 100c0 11 32.2 20 72 20s72-9 72-20" opacity=".6"/>
+                <path d="M252 84h34M252 100h26M252 116h30" opacity=".5"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Database Management Project</h3><span class="project-year">2025</span></div>
+              <p>A normalized MySQL database for a small library — ER modeling, views and reporting queries that stay fast as data grows.</p>
+              <p class="project-extra">▸ Highlight: 3NF schema with indexed search and summary views.</p>
+              <ul class="project-tags"><li>MySQL</li><li>ER Design</li><li>SQL</li></ul>
+              <div class="project-links">
+                <a class="btn-sm" href="#" rel="noopener">View Project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+                <a class="btn-sm ghost" href="#" rel="noopener">Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 · AI Chatbot Experiment -->
+          <article class="project-card glass reveal" style="--d:.2s">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-index">05</span>
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="48" y="38" width="172" height="88" rx="16"/>
+                <path d="M88 126l-10 26 32-26"/>
+                <circle cx="98" cy="82" r="6"/><circle cx="134" cy="82" r="6"/><circle cx="170" cy="82" r="6"/>
+                <rect x="192" y="98" width="84" height="54" rx="14" opacity=".7"/>
+                <path d="M250 152l8 20-26-20" opacity=".7"/>
+                <path d="M262 42l4.5 11 11 4.5-11 4.5-4.5 11-4.5-11-11-4.5 11-4.5z"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-top"><h3>AI Chatbot Experiment</h3><span class="project-year">2025</span></div>
+              <p>A rule-based study-assistant chatbot — my first hands-on step into natural language processing with Python.</p>
+              <p class="project-extra">▸ Highlight: keyword-intent engine with a fallback that logs unknown queries.</p>
+              <ul class="project-tags"><li>Python</li><li>AI Basics</li><li>NLP</li></ul>
+              <div class="project-links">
+                <a class="btn-sm" href="#" rel="noopener">View Project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+                <a class="btn-sm ghost" href="#" rel="noopener">Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06 · Cybersecurity Learning Lab -->
+          <article class="project-card glass reveal" style="--d:.15s">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-index">06</span>
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M160 26l70 27v54c0 41-29 64-70 79-41-15-70-38-70-79V53z"/>
+                <circle cx="160" cy="94" r="15"/>
+                <rect x="153" y="103" width="14" height="28" rx="7"/>
+                <path d="M60 70H40M60 100H32M60 130H44" opacity=".45"/>
+                <path d="M260 70h20M260 100h28M260 130h16" opacity=".45"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Cybersecurity Learning Lab</h3><span class="project-year">Ongoing</span></div>
+              <p>A home virtual lab for practicing security fundamentals — hardening, safe configuration and CTF-style challenges.</p>
+              <p class="project-extra">▸ Highlight: hardened VM setup with a repeatable audit checklist.</p>
+              <ul class="project-tags"><li>Security</li><li>VMs</li><li>CTF</li></ul>
+              <div class="project-links">
+                <a class="btn-sm" href="#" rel="noopener">View Project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+                <a class="btn-sm ghost" href="#" rel="noopener">Notes
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ SERVICES ══════════════════════════ -->
+    <section class="section" id="services">
+      <span class="section-ghost" aria-hidden="true">Services</span>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">04 — Services</span>
+          <h2 class="section-title">What I can <em>do for you</em>.</h2>
+          <p class="section-lead">Student-friendly rates, honest timelines and clean, hand-written work. Here’s where I can help today.</p>
+        </div>
+
+        <!-- ✏️ SERVICES — edit titles, copy and bullet points freely -->
+        <div class="services-grid">
+          <article class="service-card glass reveal">
+            <span class="service-num" aria-hidden="true">01</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+            </span>
+            <h3>Website Development</h3>
+            <p>Clean, fast, hand-coded websites for small businesses, students and personal brands — portfolios included.</p>
+            <ul class="service-points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Responsive on every device</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>SEO-friendly semantic markup</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Easy for you to update later</li>
+            </ul>
+            <a class="service-more" href="#contact">Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card glass reveal" style="--d:.08s">
+            <span class="service-num" aria-hidden="true">02</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M9.5 20V9.5"/></svg>
+            </span>
+            <h3>Front-End Development</h3>
+            <p>Pixel-careful interfaces built with semantic HTML5 and modern CSS3 — no heavy frameworks attached.</p>
+            <ul class="service-points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Modern CSS layouts &amp; animation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Cross-browser consistency</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Performance-first code</li>
+            </ul>
+            <a class="service-more" href="#contact">Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card glass reveal" style="--d:.16s">
+            <span class="service-num" aria-hidden="true">03</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="3"/><path d="M4.5 5.5v13c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3v-13"/><path d="M4.5 12c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3"/></svg>
+            </span>
+            <h3>Database Design</h3>
+            <p>Simple, well-organized schemas and queries that keep your data clean as it grows.</p>
+            <ul class="service-points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>ER diagrams &amp; normalization</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>SQL queries, views &amp; reports</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>MySQL / SQLite setup</li>
+            </ul>
+            <a class="service-more" href="#contact">Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card glass reveal" style="--d:.08s">
+            <span class="service-num" aria-hidden="true">04</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.3 3.8 5.2 3.8 8.5s-1.3 6.2-3.8 8.5c-2.5-2.3-3.8-5.2-3.8-8.5s1.3-6.2 3.8-8.5z"/></svg>
+            </span>
+            <h3>Network Configuration</h3>
+            <p>Small-office and home network setup — simulated in Packet Tracer or configured on real hardware.</p>
+            <ul class="service-points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Router &amp; switch configuration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Subnetting &amp; VLAN basics</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Lab docs &amp; topology diagrams</li>
+            </ul>
+            <a class="service-more" href="#contact">Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card glass reveal" style="--d:.16s">
+            <span class="service-num" aria-hidden="true">05</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 13.5V12a7.5 7.5 0 0 1 15 0v1.5"/><rect x="3.5" y="13" width="4" height="6" rx="1.8"/><rect x="16.5" y="13" width="4" height="6" rx="1.8"/><path d="M19 19v.5a2.5 2.5 0 0 1-2.5 2.5H13"/></svg>
+            </span>
+            <h3>IT Support &amp; Troubleshooting</h3>
+            <p>Patient, practical help with everyday hardware and software issues — explained so you actually learn.</p>
+            <ul class="service-points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>OS setup &amp; optimization</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Hardware diagnosis</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Backup &amp; recovery basics</li>
+            </ul>
+            <a class="service-more" href="#contact">Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card glass reveal" style="--d:.24s">
+            <span class="service-num" aria-hidden="true">06</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.8v5.4c0 4.4-3 7.6-7 9.3-4-1.7-7-4.9-7-9.3V5.8z"/><path d="M9 11.8l2.2 2.2L15.5 9"/></svg>
+            </span>
+            <h3>Basic Cybersecurity Solutions</h3>
+            <p>Security hygiene for students and small setups — practical protection without the jargon.</p>
+            <ul class="service-points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Setup audits &amp; hardening tips</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Password &amp; browsing practices</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Common-attack awareness</li>
+            </ul>
+            <a class="service-more" href="#contact">Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ EDUCATION / JOURNEY ═══════════════════
+         ✏️ TIMELINE — edit dates, titles, copy and chips per item.
+         Add a new item by copying a .t-item block. -->
+    <section class="section" id="journey">
+      <span class="section-ghost" aria-hidden="true">Journey</span>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">05 — Learning Journey</span>
+          <h2 class="section-title">The road <em>so far</em>.</h2>
+          <p class="section-lead">A timeline of what I’m studying and building — updated as the journey moves.</p>
+        </div>
+
+        <div class="timeline">
+          <span class="timeline-progress" aria-hidden="true"></span>
+
+          <div class="t-item now reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2024 — Present · Now</span>
+              <h3>Diploma in Information Technology</h3>
+              <!-- ✏️ Replace with your institute name -->
+              <p>Core coursework in programming, databases, networking and web technology at <strong>[Your Institute Name]</strong> — building the foundation for a career in tech.</p>
+              <div class="t-chips"><span class="chip">DIT</span><span class="chip">Coursework</span></div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2024</span>
+              <h3>Programming Foundations</h3>
+              <p>Started with C, then C++ in Code::Blocks — logic building, functions, pointers and a first taste of object-oriented thinking.</p>
+              <div class="t-chips"><span class="chip">C</span><span class="chip">C++</span></div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2025</span>
+              <h3>Computer Networking</h3>
+              <p>Subnetting, routing and switching labs in Cisco Packet Tracer — learning how data really moves across a network.</p>
+              <div class="t-chips"><span class="chip">Packet Tracer</span><span class="chip">TCP/IP</span></div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2025</span>
+              <h3>Database Management</h3>
+              <p>ER diagrams, normalization and hands-on SQL — designing schemas that stay clean as data grows.</p>
+              <div class="t-chips"><span class="chip">SQL</span><span class="chip">ER Modeling</span></div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2025 — Present</span>
+              <h3>Artificial Intelligence</h3>
+              <p>Exploring AI fundamentals and experimenting with simple chatbots — and picking up Python along the way.</p>
+              <div class="t-chips"><span class="chip">Python</span><span class="chip">AI Basics</span></div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">Ongoing</span>
+              <h3>Cybersecurity Fundamentals</h3>
+              <p>Security concepts, safe coding habits and CTF-style challenges — because building things means learning to protect them.</p>
+              <div class="t-chips"><span class="chip">Security</span><span class="chip">CTF</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ CONTACT ══════════════════════════ -->
+    <section class="section" id="contact">
+      <span class="section-ghost" aria-hidden="true">Contact</span>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">06 — Contact</span>
+          <h2 class="section-title">Let’s build <em>something</em>.</h2>
+          <p class="section-lead">A project, an internship, or just a question about tech — my inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- info panel -->
+          <div class="contact-card glass hud reveal">
+            <div>
+              <h3>Contact information</h3>
+              <p>Prefer email or a call? Reach me directly — I usually reply within a day.</p>
+            </div>
+
+            <div class="contact-rows">
+              <a class="contact-row" href="mailto:ruthnandy7@gmail.com">
+                <span class="cr-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+                </span>
+                <span><span class="cr-label">Email</span><span class="cr-value">ruthnandy7@gmail.com</span></span>
+              </a>
+              <a class="contact-row" href="tel:0764297051">
+                <span class="cr-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
+                </span>
+                <span><span class="cr-label">Phone</span><span class="cr-value">0764297051</span></span>
+              </a>
+              <div class="contact-row">
+                <span class="cr-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+                </span>
+                <!-- ✏️ Replace with your location -->
+                <span><span class="cr-label">Location</span><span class="cr-value">Your City, Your Country</span></span>
+              </div>
+            </div>
+
+            <!-- ✏️ SOCIAL LINKS — replace the hrefs with your profile URLs -->
+            <div class="social-row">
+              <a class="social-link" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+              </a>
+              <a class="social-link" href="https://x.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg>
+              </a>
+              <a class="social-link" href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><path d="M17.4 6.6h.01"/></svg>
+              </a>
+            </div>
+
+            <!-- ✏️✏️✏️ EXTERNAL WEBSITE LINK ✏️✏️✏️
+                 Replace https://example.com with YOUR website URL.
+                 Keep target="_blank" and rel="noopener noreferrer". -->
+            <a class="external-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+              <span>Visit My Website
+                <small>https://example.com</small>
+              </span>
+              <svg class="ext-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+
+          <!-- ✏️ FORM BACKEND: this form validates in the browser only.
+               To receive messages, connect it to a form service
+               (Formspree / Web3Forms / EmailJS) or your own API —
+               see the handler in js/script.js, section 7. -->
+          <form class="contact-form glass reveal" id="contact-form" novalidate style="--d:.12s">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" required>
+                <span class="field-line" aria-hidden="true"></span>
+                <span class="field-msg" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required>
+                <span class="field-line" aria-hidden="true"></span>
+                <span class="field-msg" aria-live="polite"></span>
+              </div>
+              <div class="form-field full">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project inquiry, internship, hello…" required>
+                <span class="field-line" aria-hidden="true"></span>
+                <span class="field-msg" aria-live="polite"></span>
+              </div>
+              <div class="form-field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me a little about what you have in mind…" required></textarea>
+                <span class="field-line" aria-hidden="true"></span>
+                <span class="field-msg" aria-live="polite"></span>
+              </div>
+              <p class="form-note">
+                Note — this is a front-end-only template. Form validation works in the browser,
+                but delivering messages requires connecting the form to a backend or a form
+                service (Formspree, Web3Forms, EmailJS, or your own API).
+              </p>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit" id="submit-btn">
+                  Send Message
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#home">
+            <span class="logo-mark" aria-hidden="true">NR</span>
+            <span class="logo-text">
+              <span class="logo-name">Nandera Ruth</span>
+              <span class="logo-sub">DIT · Developer</span>
+            </span>
+          </a>
+          <p>DIT student &amp; aspiring technologist crafting clean, functional projects with HTML, CSS, C — and a lot of curiosity.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul class="footer-links">
+            <!-- ✏️ SOCIAL + EXTERNAL LINKS — replace with your URLs -->
+            <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>LinkedIn</a></li>
+            <li><a href="mailto:ruthnandy7@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>Email Me</a></li>
+            <!-- ✏️ EXTERNAL WEBSITE LINK (same as in the Contact section) -->
+            <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>Visit My Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Nandera Ruth. All rights reserved.</span>
+        <span>Designed &amp; built with HTML5 &amp; CSS3 — no frameworks.</span>
+        <a class="back-top" href="#home" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
